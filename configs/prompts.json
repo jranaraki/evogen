@@ -1,0 +1,6 @@
+{
+  "generator": "Generate only ONE benchmark question in one of these domains:\n- reasoning\n- coding\n- math\n- factual knowledge\n- adversarial prompts. Do NOT add explanations, prefixes, suffixes, quotes, or formatting.",
+  "scorer": "You are a strict evaluator.\nQuestion: {question}\nModel Answer: {answer}\nScore from 0 to 1. Output only a float value. Do NOT add explanations, prefixes, suffixes, quotes, or formatting.",
+  "harder": "Make this question more difficult. Do NOT add explanations, prefixes, suffixes, quotes, or formatting.\nHere is the question:\n{question}.",
+  "simpler": "Make this question simpler:\n{question}"
+}
