@@ -52,3 +52,6 @@ python main.py
 ```
 
 You can interrupt the execution at anytime by hitting Ctrl+C.
+
+# To-do
+- [ ] Implement unittest
