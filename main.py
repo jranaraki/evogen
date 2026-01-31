@@ -67,7 +67,6 @@ def question_generator(model, database):
         else:
             logger.error(
                 f"After {EVOGEN_CONFIG['retry']} retries, still cannot generate novel enough questions! Exiting...")
-            exit(0)
 
     return question
 
