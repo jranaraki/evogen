@@ -1,4 +1,4 @@
-# evogen
+# EVOGEN
 This is a self-evolving benchmark generator project. The idea is to have generator that adhere to the following requiremets:
 
 - User to supply an OpenAI API–compatible endpoint (to be used for the question generation, the question answering, and the evaluation)
