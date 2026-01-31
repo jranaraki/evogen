@@ -67,6 +67,7 @@ def question_generator(model, database):
         else:
             logger.error(
                 f"After {EVOGEN_CONFIG['retry']} retries, still cannot generate novel enough questions! Exiting...")
+            raise KeyboardInterrupt
 
     return question
 
@@ -99,7 +100,7 @@ def scorer(model, input_question, output_response):
     response = model.chat(messages=messages)
 
     try:
-        score = float(re.sub(r"\s+", "", response))
+        score = max(min(float(re.sub(r"\s+", "", response)), 1.0), 0.0)
     except:
         score = 0
     return score
