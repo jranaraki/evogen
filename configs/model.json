@@ -1,5 +1,5 @@
 {
-  "model": "qwen3:0.6b",
-  "provider": "ollama",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
   "base_url": "http://localhost:11434/v1"
 }
