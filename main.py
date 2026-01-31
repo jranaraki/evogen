@@ -44,6 +44,8 @@ def init():
     if EVOGEN_CONFIG is not None:
         logger.info('Loaded evogen config file!')
 
+    os.makedirs('db', exist_ok=True)
+
 
 def question_generator(model, database):
     """
