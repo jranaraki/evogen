@@ -1,5 +1,5 @@
 {
   "retry": 5,
   "span": 5,
-  "novelty_threshold": 0.6
+  "novelty_threshold": 0.5
 }
