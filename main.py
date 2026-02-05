@@ -59,11 +59,15 @@ def question_generator(model, database):
         {'role': 'user', 'content': PROMPT_CONFIG['generator']}
     ]
 
+    retries = 0
     for i in range(int(EVOGEN_CONFIG['retry'])):
         question = model.chat(messages=messages)
         distance_score = database.distance_score(question)
-        if distance_score > float(EVOGEN_CONFIG['novelty_threshold']):
+        if -float(EVOGEN_CONFIG['novelty_threshold']) < distance_score < float(EVOGEN_CONFIG['novelty_threshold']):
             break
+        elif retries < int(EVOGEN_CONFIG['retry']):
+            retries += 1
+            continue
         else:
             logger.error(
                 f"After {EVOGEN_CONFIG['retry']} retries, still cannot generate novel enough questions! Exiting...")
