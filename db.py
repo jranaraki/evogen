@@ -5,7 +5,7 @@ import os
 
 import chromadb
 from dotenv import load_dotenv
-from huggingface_hub.utils import tabulate
+from tabulate import tabulate
 
 load_dotenv()
 
@@ -13,7 +13,7 @@ load_dotenv()
 class Database:
     def __init__(self):
         self.chroma_client = chromadb.PersistentClient(path=os.getenv('DATABASE_PATH'))
-        self.collection = self.chroma_client.get_or_create_collection(name='questions')
+        self.collection = self.chroma_client.get_or_create_collection(name='questions', metadata={'hnsw:space': 'cosine'})
 
     def insert_question(self, question):
         """
