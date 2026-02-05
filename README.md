@@ -17,7 +17,7 @@ The proposed implementation has the following components:
 
 The system runs forever, unless Ctrl+C is hit, where the stored questions in the database will be printed out, and the scores are stored in a file so that one can continue the process later.
 
-![System.png](img/System.png)
+![System.png](img/Evogen.png)
 
 # Work flow
 
