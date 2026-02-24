@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.5.2">
   <diagram name="Page-1" id="vcA4vJv-Vb_uX4EC9GND">
-    <mxGraphModel dx="2066" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2000" dy="1155" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -121,12 +121,6 @@
         </mxCell>
         <mxCell id="h9rKt2xXEwFPbApVEe0S-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Loop" vertex="1">
           <mxGeometry height="30" width="60" x="190" y="70" as="geometry" />
-        </mxCell>
-        <mxCell id="6IbCky3v8YgZ2IQWCcXM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="370" y="510" as="geometry" />
-        </mxCell>
-        <mxCell id="6IbCky3v8YgZ2IQWCcXM-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="370" y="510" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
